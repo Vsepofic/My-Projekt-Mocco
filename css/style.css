@@ -567,7 +567,9 @@ footer {
   .footer-column-3,
   .footer-column-4,
   .footer-column-5 {
-    width: 45%;
+    width: 25%;
+    margin: 0;
+    padding: 0;
   }
   .br {
     display: none;
@@ -577,6 +579,9 @@ footer {
     justify-content: center;
   }
   .footer-icons img {
+    width: 1.7em;
+    height: 1.7em;
+    margin: 1%;
     padding: 0 10%;
   }
   .zakaz-background {
@@ -663,11 +668,14 @@ footer {
     font-size: 0.8em;
     line-height: 1em;
   }
+  .footer-column-2,
+  .footer-column-3,
+  .footer-column-4,
+  .footer-column-5 {
+    width: 20%;
+  }
   .footer-icons img {
-    width: 1.5em;
-    height: 1.5em;
-    margin: 1% 2%;
-    padding: 0 10%;
+    display: none;
   }
   .zakaz {
     text-align: center;
