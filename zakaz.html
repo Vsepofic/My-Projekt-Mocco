@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zakaz</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+  <div class="container-big">
+    <div class="header-background">
+      <header class="header">
+        <div class="header-menu">
+          <nav class="header-nav">
+            <div class="header-logo"><a href="index.html"><img src="img/Whats11.png" alt=""></a></div>
+            <div><a href="#">Главная</a></div>
+            <div><a href="">Кофейня</a></div>
+            <div><a href="zakaz.html" class="active">Магазин</a></div>
+            <div><a href="barista.html">Школа бариста</a></div>
+            <div><a href="#">Релакс</a></div>
+            <div><a href="404.html">Контакты</a></div>
+            <div class="header-tel">+38(099)-777-88-99</div>
+          </nav>
+        </div>
+        <div class="about-us-barista">
+          <h1>О нас</h1>
+          <div class="tire-barista"></div>
+          <div class="about-text-barista">
+            <p>Мы знаем, каким должен быть правильный <br>
+            круасан, и с радостью расскажем об этом вам
+            </p>
+          </div>
+          <div class="about-batton-barista">
+            <a href="">напишите нам</a>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="zakaz-background">
+      <div class="zakaz">
+        <h2>Заказ круасанов</h2>
+        <form class="zakaz-form">
+          <div>
+            <label class="zakaz-column">
+              <span>Имя:</span>
+              <input type="text" tabindex="1" placeholder="Ваше имя:" id="name" name="username" required>
+            </label>
+          </div>
+          <div>
+            <label class="zakaz-column">
+              <span>Город:</span>
+              <input type="text" tabindex="2" placeholder="Ваш город:" id="city" name="usercity" list="listcity" required>
+              <datalist id="listcity">
+                <option>Артемовск</option>
+                <option>Дружковка</option>
+                <option>Изюм</option>
+                <option>Константиновка</option>
+                <option>Краматорск</option>
+                <option>Славянск</option>
+              </datalist>
+            </label>
+          </div>
+          <div>
+            <label class="zakaz-column">
+              <span>Улица:</span>
+              <input type="text" tabindex="3" placeholder="Ваша улица:" id="street" name="userstreet" required>
+            </label>
+          </div>
+          <div>
+            <label class="zakaz-column">
+              <span>Дом:</span>
+              <input type="text" tabindex="4" placeholder="Ваш дом:" id="house" name="userhouse" required>
+            </label>
+          </div>
+          <div>
+            <label class="zakaz-column">
+              <span>Квартира:</span>
+              <input type="text" tabindex="5" placeholder="Ваша квартира" id="flat" name="userflat" required>
+            </label>
+          </div>
+          <div>
+            <label class="zakaz-column">
+              <span>Телефон:</span>
+              <input type="tel" tabindex="6" placeholder="+38(099)1234567" id="tel" name="userphon" required>
+            </label>
+          </div>
+          <div>
+            <label class="zakaz-column">
+              <span>Email:</span>
+              <input type="email" tabindex="7" placeholder="user@gmail.com" id="email" name="useremail" required>
+            </label>
+          </div>
+          <div class="option">
+            <label class="zakaz-column">
+              <span class="inline">Выберите круасан:</span>
+              <select tabindex="8" name="nameofcroissant" id="croissant" required>
+                <option value="beef">С Говядиной</option>
+                <option value="chicken">С Курицей</option>
+                <option selected value="pig">Со Свининой</option>
+                <option value="cherry">С Вишней</option>
+                <option value="cream">С Кремом</option>
+                <option value="chocolate">С Шоколадом</option>
+                <option value="apple">С Яблоком</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <label class="zakaz-column">
+              <span>Выберите кол-во:</span>
+              <input type="number" tabindex="9" placeholder="-" id="quantity" name="quantity" min="1" max="10" step="1"
+                required>
+            </label>
+          </div>
+          <div class="radio">
+            <p class="radio-column-1">Нужно ли класть салфетки?</p>
+            <label class="radio-column-2">
+              <span>Да</span>
+              <input type="radio" tabindex="10" id="quantityyes" name="napkins" value="yes" checked>
+            </label>
+            <label class="radio-column-3">
+              <span>Нет</span>
+              <input type="radio" tabindex="10" id="quantitynou" name="napkins" value="nou">
+            </label>
+          </div>
+          <div>
+            <label>
+              <span>Дополнительный комментарий:</span><br>
+              <textarea tabindex="11" placeholder="Ваш коментарий:" name="usermessage" id="message" cols="30"
+                rows="5"></textarea>
+            </label>
+          </div>
+          <div id="buttons">
+            <span><input type="submit" id="submitbtn" name="submitbtn" value="Заказать"></span>
+            <span><input type="reset" id="resetbtn" value="Очистить"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-background">
+      <footer class="footer">
+        <div class="footer-column footer-column-1">
+          <h4>MOCCO</h4>
+          <p>Мы знаем, каким должен быть<br class="br"> правильный
+            кофе, и с радостью<br class="br"> расскажем об этом вам
+          </p>
+          <p>+38(099)-777-88-99</p>
+          <p>+38(099)-777-99-88</p>
+          <p>mocco-cofee@gmail.com</p>
+        </div>
+        <div class="footer-column footer-column-2">
+          <h4>О нас</h4>
+          <div class="footer-tire"></div>
+          <a href="404.html">Команда</a>
+          <a href="404.html">философия</a>
+          <a href="404.html">Франчайзинг</a>
+        </div>
+        <div class="footer-column footer-column-3">
+          <h4>Кофейня</h4>
+          <div class="footer-tire"></div>
+          <a href="404.html">О кофейне</a>
+          <a href="404.html">Меню</a>
+          <a href="404.html">Мастер-классы</a>
+        </div>
+        <div class="footer-column footer-column-4">
+          <h4>Магазин</h4>
+          <div class="footer-tire"></div>
+          <a href="404.html">Оптом</a>
+          <a href="404.html">В розницу</a>
+          <a href="404.html">Новинки</a>
+        </div>
+        <div class="footer-column footer-column-5">
+          <h4>Релакс</h4>
+          <div class="footer-tire"></div>
+          <a href="404.html">Новости и статьи</a>
+          <a href="404.html">Галерея</a>
+          <div class="footer-icons">
+            <a href="404.html"><img src="icons/facebook (1).svg" alt=""></a>
+            <a href="404.html"><img src="icons/instagram (1).svg" alt=""></a>
+            <a href="404.html"><img src="icons/twitter (1).svg" alt=""></a>
+            <a href="404.html"><img src="icons/vk (1).svg" alt=""></a>
+            <a href="404.html"><img src="icons/google (1).svg" alt=""></a>
+            <a href="404.html"><img src="icons/telegram (2).svg" alt=""></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  
+</body>
+</html>
