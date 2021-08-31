@@ -2091,6 +2091,8 @@ span:hover {
 }
 .production-container p {
   margin-bottom: 50px;
+  font-size: 25px;
+  line-height: 30px;
 }
 .production-column-1 {
   width: 50%;
@@ -2560,6 +2562,10 @@ span:hover {
 .relax-news-h3 {
   padding: 50px 20px;
   font-weight: bold;
+}
+.relax-news-text p {
+  font-size: 25px;
+  line-height: 30px;
 }
 /* .relax-news-tire {
   border: 1px solid gainsboro;
@@ -4446,6 +4452,18 @@ footer {
   }
   .footer-icons img {
     display: none;
+  }
+  .footer-arrow {
+    width: 50px;
+    height: 50px;
+  }
+  .footer-arrow-1 {
+    width: 15px;
+    height: 15px;
+  }
+  .footer-arrow-2 {
+    width: 20px;
+    height: 20px;
   }
 }
 /* ==================================== footer */
