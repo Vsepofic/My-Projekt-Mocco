@@ -1,31 +1,25 @@
-.best {
-  display: inline-block;
-  color: #fff;
-  background-color: green;
-  border-radius: 20px;
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap");
+/* header =================================================*/
+
+.nav-wrapper {
+  margin: 0 1%;
 }
-.circle-green {
-  display: inline-block;
-  border: 4px solid green;
-  border-radius: 50%;
+.indent {
+  margin: 0 1%;
 }
-.span-full {
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  border: 4px solid #000;
-}
+
+/* shop-coffee-best ***************************************** */
 .shop-coffee-best {
   display: inline-block;
   color: #fff;
-  background-color: green;
+  background-color: teal;
   border-radius: 20px;
   padding: 6px 30px;
   margin-bottom: 30px;
 }
 .span-circle {
   display: inline-block;
-  border: 4px solid green;
+  border: 4px solid teal;
   border-radius: 50%;
   margin-right: 5px;
   margin-bottom: 2px;
@@ -34,20 +28,70 @@ table span {
   width: 8px;
   height: 8px;
   display: inline-block;
-  border: 4px solid #000;
+  border: 4px solid teal;
   margin-right: 2px;
 }
 .span-empty {
-  border: 1px solid #000000;
+  border: 1px solid teal;
 }
-.shop-coffee-price {
-  font-size: 75px;
+/* ************************************* shop-coffee-best */
+
+/* shop-coffee-photo  **************************************************** */
+.shop-coffee-photo {
+  margin-top: 5%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  border: 4px solid transparent;
+  transition: 0.5s ease-out;
+  align-self: flex-start;
 }
-.price-small {
-  font-size: 30px;
+.shop-coffee-photo img {
+  width: 100%;
+  display: block;
+  border: 4px solid #dbdbdb;
+  transition: 0.5s ease-out;
 }
-.block-mar-top {
-  margin-top: 150px;
+.shop-coffee-photo:hover {
+  border-color: #fff;
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.shop-coffee-photo:hover img {
+  transform: scale(1.05);
+}
+.shop-coffee-photo::after {
+  content: attr(data-descr);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  padding: 20% 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 50px;
+  transition: 0.5s ease-out 0.2s;
+  pointer-events: none;
+}
+.shop-coffee-photo:hover::after {
+  top: 25%;
+}
+
+/* ******************************************  shop-coffee-photo  */
+
+/*  footer   =========================================== */
+
+.footer-icons {
+  text-align: center;
+  display: flex;
+}
+.footer-icons img {
+  width: 20px;
+  height: 20px;
+  margin: 3% 5%;
+  padding: 0 0.5%;
 }
 @keyframes footer-arrow {
   0% {
@@ -60,9 +104,12 @@ table span {
   }
 }
 .footer-arrow-position {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  color: gray;
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
   align-items: flex-end;
 }
 .footer-arrow {
@@ -93,34 +140,30 @@ table span {
   border-bottom: 3px solid gray;
   transform: rotate(225deg);
 }
-.footer-icons {
-  text-align: center;
-}
-.footer-icons img {
-  width: 20px;
-  height: 20px;
-  margin: 3% 1%;
+@media screen and (max-width: 1366px) {
+  .email-link {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 1024px) {
-  footer h4 {
-    font-size: 15px;
+  /* .footer-tire {
+    display: none;
+  } */
+  .footer-column .view-port-tire-white {
+    margin: 5px auto 10px;
+    width: 30px;
   }
-  footer .brand a {
-    font-size: 15px;
+  .br {
+    display: none;
   }
-  footer p {
-    font-size: 10px;
-  }
-  footer a {
-    font-size: 10px;
+  .footer-icons img {
+    margin: 1%;
+    padding: 0 10%;
   }
 }
 @media screen and (max-width: 992px) {
   .footer-flex {
     display: flex;
-  }
-  .footer-flex li {
-    margin-left: 2%;
   }
 }
 @media screen and (max-width: 736px) {
@@ -136,10 +179,116 @@ table span {
     width: 15px;
     height: 15px;
   }
-  .shop-coffee-price {
-    font-size: 50px;
+}
+/* ================================================== footer */
+/* view-port  ****************************************************** */
+.block-mar-top {
+  margin-bottom: 50px;
+}
+.block-mar-top-2 {
+  margin-bottom: -20px;
+}
+.view-port-2 {
+  background-color: rgb(255, 255, 255);
+  height: 1px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cylon-2 {
+  background-color: rgb(255, 255, 255);
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,45484d+50,000000+100&0+0,1+50,0+100 */
+  background: -moz-linear-gradient(
+    left,
+    rgba(69, 72, 77, 0) 0%,
+    rgba(69, 72, 77, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(69, 72, 77, 0) 0%,
+    rgba(69, 72, 77, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(69, 72, 77, 0) 0%,
+    rgba(69, 72, 77, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0045484d', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+  color: rgb(255, 255, 255);
+  height: 100%;
+  width: 5%;
+
+  -webkit-animation: 4s linear 0s infinite alternate move_eye-2;
+  -moz-animation: 4s linear 0s infinite alternate move_eye-2;
+  -o-animation: 4s linear 0s infinite alternate move_eye-2;
+  animation: 4s linear 0s infinite alternate move_eye-2;
+}
+
+@-moz-keyframes move_eye-1 {
+  from {
+    margin-left: -10%;
   }
-  .price-small {
-    font-size: 20px;
+  to {
+    margin-left: 110%;
   }
 }
+@-o-keyframes move_eye-1 {
+  from {
+    margin-left: -10%;
+  }
+  to {
+    margin-left: 110%;
+  }
+}
+@keyframes move_eye-1 {
+  from {
+    margin-left: -10%;
+  }
+  to {
+    margin-left: 110%;
+  }
+}
+@-webkit-keyframes move_eye-2 {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: -10%;
+  }
+}
+@-moz-keyframes move_eye-2 {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: -10%;
+  }
+}
+@-o-keyframes move_eye-2 {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: -10%;
+  }
+}
+@keyframes move_eye-2 {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: -10%;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .view-port,
+  .view-port-2 {
+    display: none;
+  }
+}
+
+/* ******************************************************  view-port */
